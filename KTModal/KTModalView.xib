@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KTModalView" customModule="KTModal" customModuleProvider="target">
+            <connections>
+                <outlet property="headlineLabel" destination="mCy-As-dKC" id="cnt-q6-Ebc"/>
+                <outlet property="statusImage" destination="5Ba-lk-1Mn" id="pkP-hb-4TC"/>
+                <outlet property="subheadLabel" destination="MMJ-2A-Yjt" id="788-5W-RQL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="6uu-Pr-RJK">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8HE-0z-dQe">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Ba-lk-1Mn">
+                        <rect key="frame" x="50" y="10" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="2Ss-fB-ddX"/>
+                            <constraint firstAttribute="height" constant="130" id="tBH-a9-gId"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCy-As-dKC">
+                        <rect key="frame" x="8" y="160" width="214" height="21"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Optional multi-line capable subhead label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMJ-2A-Yjt">
+                        <rect key="frame" x="8" y="186" width="214" height="38"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mCy-As-dKC" firstAttribute="top" secondItem="5Ba-lk-1Mn" secondAttribute="bottom" constant="20" id="5wR-is-HiL"/>
+                    <constraint firstItem="MMJ-2A-Yjt" firstAttribute="top" secondItem="mCy-As-dKC" secondAttribute="bottom" constant="5" id="CWp-7j-dxu"/>
+                    <constraint firstItem="5Ba-lk-1Mn" firstAttribute="centerX" secondItem="8HE-0z-dQe" secondAttribute="centerX" id="D1o-mV-TQw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mCy-As-dKC" secondAttribute="trailing" id="J2o-jp-x3H"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="MMJ-2A-Yjt" secondAttribute="trailing" id="JuJ-qy-not"/>
+                    <constraint firstItem="MMJ-2A-Yjt" firstAttribute="leading" secondItem="8HE-0z-dQe" secondAttribute="leadingMargin" id="QRt-ek-dzX"/>
+                    <constraint firstItem="5Ba-lk-1Mn" firstAttribute="top" secondItem="8HE-0z-dQe" secondAttribute="top" constant="10" id="nAv-NC-sbg"/>
+                    <constraint firstItem="mCy-As-dKC" firstAttribute="leading" secondItem="8HE-0z-dQe" secondAttribute="leadingMargin" id="pgM-Aq-XSV"/>
+                </constraints>
+            </view>
+            <blurEffect style="light"/>
+            <point key="canvasLocation" x="12" y="-26"/>
+        </visualEffectView>
+    </objects>
+</document>
